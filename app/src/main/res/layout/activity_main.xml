@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.digitalhouse.memoria.MainActivity"
+    android:background="@color/colorPrimaryDark"
+   >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:background="@drawable/pattern_tile"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e4303f9f" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reglas"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:paddingBottom="30dp"
+            android:textStyle="bold"
+            android:id="@+id/textViewReglas"/>
+
+    <LinearLayout
+        android:layout_below="@id/textViewReglas"
+        android:id="@+id/linearLinea1"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/holder1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/holder2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/holder3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLinea2"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/linearLinea1"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/holder4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/holder5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/holder6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLinea3"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/linearLinea2"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/holder7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/holder8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/holder9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/holderResultado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

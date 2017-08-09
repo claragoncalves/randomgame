@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.digitalhouse.memoria.FragmentResultado"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:background="@drawable/pattern_tile"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efff4081" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="center"
+        android:id="@+id/imagenResultado"
+        tools:src="@drawable/ic_tag_faces_black_24dp"/>
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        tools:text="@string/ganaste"
+        android:layout_below="@id/imagenResultado"/>
+
+    <TextView
+        tools:text="@string/coinciden"
+        android:id="@+id/textViewCoincidencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResultado"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:background="#dc3b71"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttonJugarDeNuevo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="@string/nuevo_juego" />
+</RelativeLayout>
