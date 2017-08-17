@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context="com.example.digitalhouse.memoria.FragmentResultado"
+    tools:context="com.example.digitalhouse.memoria.view.FragmentResultado"
     >
     <FrameLayout
         android:layout_width="match_parent"
@@ -43,7 +43,28 @@
         android:textColor="#ffffff"
         android:textSize="24sp"
         android:textAlignment="center"/>
-
+    <TextView
+        android:id="@+id/textViewResultadoPorcentaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCoincidencia"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"/>
+    <TextView
+        tools:text="@string/porcentaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResultadoPorcentaje"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"/>
     <TextView
         android:background="#dc3b71"
         android:layout_margin="10dp"

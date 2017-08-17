@@ -1,4 +1,4 @@
-package com.example.digitalhouse.memoria;
+package com.example.digitalhouse.memoria.view;
 
 import android.animation.ObjectAnimator;
 import android.support.v4.app.FragmentManager;
@@ -6,7 +6,10 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
+
+import com.example.digitalhouse.memoria.R;
+import com.example.digitalhouse.memoria.controller.ControllerResultado;
+import com.example.digitalhouse.memoria.model.pojo.Resultado;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,12 +34,12 @@ public class MainActivity extends AppCompatActivity implements FragmentFicha.Env
     @Override
     public void enviarResultado(Integer imagenSeleccionada) {
         if (imagenSeleccionadaPrevia.equals(imagenSeleccionada)){
-            cargarResultado(1);
+            cargarResultado(true);
             sacarFragmentsFichas();
         }else{
             contador--;
             if (contador.equals(0)){
-                cargarResultado(0);
+                cargarResultado(false);
                 sacarFragmentsFichas();
             }
         }
@@ -64,9 +67,12 @@ public class MainActivity extends AppCompatActivity implements FragmentFicha.Env
         fragmentTransaction.commit();
     }
 
-    private void cargarResultado(Integer resultado){
+    private void cargarResultado(Boolean resultado){
+        Resultado res = new Resultado(resultado);
+        ControllerResultado controllerResultado = new ControllerResultado();
+        controllerResultado.agregarResultadoDB(res, this);
         Bundle bundle = new Bundle();
-        bundle.putInt(FragmentResultado.RESULTADO, resultado);
+        bundle.putBoolean(FragmentResultado.RESULTADO, resultado);
         fragmentResultado = new FragmentResultado();
         fragmentResultado.setArguments(bundle);
         fragmentTransaction = fragmentManager.beginTransaction();

@@ -4,7 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.digitalhouse.memoria.MainActivity"
+    tools:context="com.example.digitalhouse.memoria.view.MainActivity"
     android:background="@color/colorPrimaryDark"
    >
     <ImageView

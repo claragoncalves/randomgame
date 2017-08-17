@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">Coincidencias</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="reglas">Elegi dos fichas del tablero</string>
     <string name="nuevo_juego">JUGAR DE NUEVO</string>
@@ -9,4 +7,6 @@
     <string name="no_coinciden">Las fichas no coinciden</string>
     <string name="perdiste">¡PERDISTE!</string>
     <string name="ganaste">¡GANASTE!</string>
+    <string name="porcentaje">Porcentaje de victorias</string>
+    <string name="porcentaje_char">%</string>
 </resources>
